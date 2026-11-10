@@ -103,7 +103,7 @@ python -m venv .venv && .venv/Scripts/pip install tiktoken
 
 ## Токенизаторы: count_tokens для Claude
 
-В опыте 1 использовался `tiktoken`: это токенайзер OpenAI. Для Claude он даёт неверные числа, поэтому цифры из опыта 1 нельзя переносить на модели Claude. Точный счёт токенов для Claude даёт эндпоинт `POST /v1/messages/count_tokens` (в SDK — `client.messages.count_tokens`). Он бесплатный для счёта токенов, но требует API-ключ.
+В опыте 1 использовался `tiktoken`: это токенайзер OpenAI. Для Claude он даёт неверные числа, поэтому цифры из опыта 1 нельзя переносить на модели Claude. Точный счёт токенов для Claude даёт эндпоинт `POST /v1/messages/count_tokens` (в SDK — `client.messages.count_tokens`). Он требует API-ключ.
 
 **Claude 3.5 Sonnet и Claude 3.5 Haiku посчитать нельзя: они выведены из эксплуатации.**
 
@@ -171,7 +171,7 @@ for model in ["claude-sonnet-5-5", "claude-haiku-5-5"]:
 
 ### DeepSeek
 
-Источник: [api-docs.deepseek.com/quick_start/pricing](https://api-docs.deepseek.com/quick_start/pricing/). Контекст 1M токенов. Поэтому цены зависят от времени: в пиковые часы (пн–пт 01:00–04:00 и 06:00–10:00 UTC, кроме праздников Китая) тариф вдвое выше.
+Источник: [api-docs.deepseek.com/quick_start/pricing](https://api-docs.deepseek.com/quick_start/pricing/). Контекст 1M токенов. Цены зависят от времени суток: в пиковые часы (пн–пт 01:00–04:00 и 06:00–10:00 UTC, кроме праздников Китая) тариф вдвое выше.
 
 | Модель | Период | Вход (кэш-попадание) | Вход (без кэша) | Выход |
 |---|---|---|---|---|
