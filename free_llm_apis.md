@@ -1,38 +1,42 @@
 # Бесплатные тарифы LLM API: что подтверждено официальными страницами
 
-Дата проверки: 12 ноября 2026. Страницы читались целиком или по частям через веб-загрузку. Если факта нет на официальной странице, это так и написано («не указано на странице»). Цифры не взяты из памяти и не округлены.
+Дата проверки: 12 ноября 2026. Данные собраны двумя способами: чтением официальных страниц (через веб-загрузку) и ручной проверкой пользователя там, где страницы не отдали нужное. В столбце «Проверка» указано, какой способ использован для каждой строки. Если факта нет на официальной странице, так и написано («не указано на странице»). Цифры не взяты из памяти и не округлены.
 
 ## Сводная таблица
 
-| Сервис | Бесплатные модели или стартовые кредиты | Лимиты | Нужна карта? | Официальные страницы | Надёжность |
+| Сервис | Бесплатные модели или стартовые кредиты | Лимиты | Нужна карта? | Официальные страницы | Проверка (12.11.2026) |
 |---|---|---|---|---|---|
-| **Anthropic (Claude API)** | Постоянного бесплатного тарифа на страницах не найдено. На странице цен упомянуты «небольшие бесплатные кредиты для тестирования API» без суммы и срока | Для новых организаций возможен уровень Evaluation (цифр нет). Уровень Start описан, см. ниже | Не указано на странице. Принимаются банковские карты | [цены](https://platform.claude.com/docs/en/about-claude/pricing), [лимиты](https://platform.claude.com/docs/en/api/rate-limits) | Частично: фраза про кредиты получена из пересказа страницы, не дословно |
-| **Vercel AI Gateway** | Есть бесплатный уровень с подмножеством моделей. Сумма «ежемесячного бесплатного кредита» на прочитанных страницах не названа; поиск указывает $5 в месяц | Числа не опубликованы: «Free tier — lower limit per model» | Страница Getting started: нужен способ оплаты у команды | [цены](https://vercel.com/docs/ai-gateway/pricing), [лимиты](https://vercel.com/docs/ai-gateway/rate-limits), [старт](https://vercel.com/docs/ai-gateway/getting-started) | Есть противоречие (см. ниже) |
-| **Google AI Studio (Gemini API)** | Бесплатный тариф («Free of charge») у ряда моделей, например Gemini 3.8 Flash, 3.6 Flash, 3.5 Flash-Lite | На странице не напечатаны, смотреть в AI Studio. Квоты считаются на проект, сбрасываются в полночь по тихоокеанскому времени | Не указано на странице | [цены](https://aistudio.google.com/docs/pricing), [лимиты](https://aistudio.google.com/docs/rate-limits) | Хорошо, часть списка моделей из пересказа |
-| **OpenRouter (`:free`)** | Модели с суффиксом `:free`, список меняется | 20 запросов в минуту; 50 в день при покупке менее 10 кредитов, 1000 в день при покупке не менее 10 | Не указано на странице | [лимиты](https://openrouter.ai/docs/api-reference/limits), [FAQ](https://openrouter.ai/docs/faq), [цены](https://openrouter.ai/pricing) | Хорошо |
-| **Groq** | План Free существует, но список моделей на Free на страницах не указан | Свою таблицу для Free получить не удалось (см. ниже) | Для Free не указано; для апгрейда на Developer нужен способ оплаты | [лимиты](https://console.groq.com/docs/rate-limits), [биллинг](https://console.groq.com/docs/billing-faqs) | Низкая: числа Free не получены |
-| **DeepSeek** | Бесплатного тарифа на прочитанных страницах нет | Нет RPM/TPM; лимит одновременных запросов на аккаунт: 2500 (deepseek-flash), 500 (deepseek-v4-pro) | Не указано на странице | [цены](https://api-docs.deepseek.com/quick_start/pricing/), [лимиты](https://api-docs.deepseek.com/quick_start/rate_limit) | Хорошо, но FAQ и платформа недоступны |
-| **Kimi (Moonshot)** | Бесплатного тарифа нет. Минимальное пополнение $1, после накопленных $5 дают ваучер $5 | Зависят от суммы пополнений; таблица на странице пустая | Не указано; для частных лиц названы WeChat Pay и Alipay | [лимиты](https://platform.kimi.ai/docs/pricing/limits), [цены](https://platform.kimi.ai/docs/pricing/chat), [оплата](https://platform.kimi.ai/docs/guide/account-and-payments) | Хорошо, но числа лимитов не получены |
+| **Anthropic (Claude API)** | Постоянного бесплатного тарифа нет. Стартовых кредитов нет, баланс нового аккаунта $0 | Лимиты платных уровней, см. раздел ниже | Не указано на странице. Принимаются банковские карты | [цены](https://platform.claude.com/docs/en/about-claude/pricing), [лимиты](https://platform.claude.com/docs/en/api/rate-limits) | Вручную (аккаунт пользователя) и чтение страниц |
+| **Vercel AI Gateway** | $5 кредитов в месяц на каждый team account, только для моделей из списка Free Tier eligible | Ниже, чем на платном тарифе; числа не опубликованы | Требование карты не подтверждено однозначно | [цены](https://vercel.com/docs/ai-gateway/pricing), [лимиты](https://vercel.com/docs/ai-gateway/rate-limits), [старт](https://vercel.com/docs/ai-gateway/getting-started) | Вручную по странице цен (last updated 8 сентября 2026) |
+| **Google AI Studio (Gemini API)** | Бесплатный тариф («Free of charge») у ряда моделей, например Gemini 3.8 Flash, 3.6 Flash, 3.5 Flash-Lite | На странице не напечатаны, смотреть в AI Studio. Квоты на проект, сброс в полночь по тихоокеанскому времени | Не указано на странице | [цены](https://aistudio.google.com/docs/pricing), [лимиты](https://aistudio.google.com/docs/rate-limits) | Чтение страниц; часть списка моделей из пересказа |
+| **OpenRouter (`:free`)** | Модели с суффиксом `:free`, список меняется | 20 запросов в минуту; 50 в день при покупке менее 10 кредитов, 1000 в день при покупке не менее 10 | Не указано на странице | [лимиты](https://openrouter.ai/docs/api-reference/limits), [FAQ](https://openrouter.ai/docs/faq), [цены](https://openrouter.ai/pricing) | Чтение страниц |
+| **Groq** | План Free: gpt-oss-120b, gpt-oss-20b, qwen3.8-27b, allam-2-7b, whisper-large-v3, orpheus-v1-english | Базовые лимиты Free (на Developer выше), таблица в разделе ниже | Для Free не указано; для апгрейда на Developer нужен способ оплаты | [лимиты](https://console.groq.com/docs/rate-limits), [биллинг](https://console.groq.com/docs/billing-faqs), [Organization Limits](https://console.groq.com/settings/limits) (нужен вход) | Вручную по странице Organization Limits |
+| **DeepSeek** | Бесплатного тарифа на прочитанных страницах нет | Нет RPM/TPM; лимит одновременных запросов на аккаунт: 2500 (deepseek-flash), 500 (deepseek-v4-pro) | Не указано на странице | [цены](https://api-docs.deepseek.com/quick_start/pricing/), [лимиты](https://api-docs.deepseek.com/quick_start/rate_limit) | Чтение страниц; FAQ и платформа недоступны |
+| **Kimi (Moonshot)** | Бесплатного тарифа нет. Минимальное пополнение $1, после накопленных $5 дают ваучер $5 | Зависят от суммы пополнений; таблица на странице пустая | Не указано; для частных лиц названы WeChat Pay и Alipay | [лимиты](https://platform.kimi.ai/docs/pricing/limits), [цены](https://platform.kimi.ai/docs/pricing/chat), [оплата](https://platform.kimi.ai/docs/guide/account-and-payments) | Чтение страниц; числа лимитов не получены |
 
 ## Подробно по сервисам
 
 ### Anthropic (Claude API)
 
-- **Постоянный free tier или только кредиты?** На прочитанных страницах постоянного бесплатного тарифа нет. API оплачивается по факту использования.
-- **Стартовые кредиты.** В странице цен есть фраза, что новые пользователи получают небольшое количество бесплатных кредитов для тестирования API. Сумма и срок на странице не указаны; фраза пришла из пересказа страницы, а не из дословного текста, поэтому считайте её неподтверждённой и проверьте в Claude Console.
+- **Бесплатный тариф.** Постоянного бесплатного тарифа нет, API оплачивается по факту использования.
+- **Стартовые кредиты.** Стартовых кредитов нет, баланс нового аккаунта $0. Это подтверждено ручной проверкой (аккаунт пользователя). Страница цен в пересказе содержала фразу про «небольшие бесплатные кредиты для тестирования API» без суммы; ручная проверка её не подтвердила, поэтому на неё рассчитывать нельзя.
 - **Кредиты по подписке.** Планы Max, Ultra и Team включают ежемесячные API-кредиты; планы Free, Pro и Enterprise под них не подходят ([страница](https://platform.claude.com/docs/en/about-claude/api-credits-for-subscribers), [справка](https://support.claude.com/en/articles/17154008-monthly-api-credits-for-max-ultra-and-team-plans)). Это не бесплатный API-тариф: нужна платная подписка.
-- **Лимиты.** Уровни Start, Build, Scale, Custom. «Новые организации … могут начать с уровня Evaluation, лимиты ниже стандартных». Цифры Evaluation на странице не указаны. Для уровня Start (стандартные лимиты, запросы / входные токены / выходные токены в минуту): Claude Opus 5.5, Sonnet 5.5, Haiku 5.5 — 4 000 / 2 000 000 / 400 000; Claude Opus 5, Sonnet 5, Haiku 4.5 — 1 000 / 2 000 000 / 400 000; Claude Fable 5.x — 4 000 / 500 000 / 100 000. Месячный лимит расходов уровня Start — 500 долларов США. Это лимиты платного аккаунта, а не бесплатных кредитов.
+- **Лимиты платных уровней.** Уровни Start, Build, Scale, Custom. «Новые организации … могут начать с уровня Evaluation, лимиты ниже стандартных». Цифры Evaluation на странице не указаны. Для уровня Start (запросы / входные токены / выходные токены в минуту): Claude Opus 5.5, Sonnet 5.5, Haiku 5.5 — 4 000 / 2 000 000 / 400 000; Claude Opus 5, Sonnet 5, Haiku 4.5 — 1 000 / 2 000 000 / 400 000; Claude Fable 5.x — 4 000 / 500 000 / 100 000. Месячный лимит расходов уровня Start — 500 долларов США.
 - **Карта.** Требования при регистрации на странице не указаны. Сумма предоплаты для первого уровня на странице не указана.
 - **Исследовательские программы** (по результатам поиска, страницы целиком не читались): External Researcher Access Program — $1000 кредитов для исследователей безопасности, AI for Science Program — до $20 000 на 6 месяцев.
 
 ### Vercel AI Gateway
 
-- **Бесплатные кредиты.** Страница цен: «Every Vercel team account gets access to both a free tier and a paid tier», упоминается «the monthly free credit». Начало отсчёта: «Your free credits start when you make your first AI Gateway request». После покупки кредитов аккаунт переходит на платный тариф и ежемесячный бесплатный кредит не действует.
-- **Сумма: противоречие.** На прочитанных страницах цен и лимитов сумма не названа (в таблице «Monthly included credit» без числа). Поисковая выдача по официальным страницам называет $5 в месяц («$5 of credits every 30 days» на лендинге). В сообщениях сообщества пользователь пишет, что кредит перестал обновляться, а Vercel Agent назвал его одноразовым промо-грантом. Официального ответа Vercel я не нашёл. Вывод: заявлено $5 в месяц, но это не подтверждено прочитанным текстом, а повторное начисление спорно. Проверяйте баланс в дашборде.
-- **Модели.** «The free tier includes a subset of models, not the full catalog». В каталоге на странице моделей с тегом `free` видны, например, `nvidia/nemotron-3.5-lightning-free`, `humansand/ampersand-v0.1`, `stealth/glyph-cluster`. Прочитано около 80 000 символов страницы, полного списка нет.
-- **Лимиты.** Числа не опубликованы: «Limits can change, so this page describes behavior rather than fixed numbers». Free — «lower limit per model», превышение даёт HTTP 429. Платный тариф не ограничивается.
-- **Карта.** Getting started: «To use free AI Gateway Credits, add a valid payment method to your team». Страница цен о карте для бесплатных кредитов молчит.
-- **Свои ключи (BYOK).** Только на платном тарифе, нужны купленные кредиты.
+Источник: [vercel.com/docs/ai-gateway/pricing](https://vercel.com/docs/ai-gateway/pricing) (last updated 8 сентября 2026), проверено вручную 12 ноября 2026.
+
+- **Бесплатный тариф.** $5 кредитов в месяц, включены в каждый Vercel team account.
+- **Только для части моделей.** $5 действуют только на модели из списка Free Tier eligible, а не на весь каталог. В каталоге на странице моделей видны модели с тегом `free`, например `nvidia/nemotron-3.5-lightning-free`, `humansand/ampersand-v0.1`, `stealth/glyph-cluster`; это неполный список, часть каталога не читалась.
+- **Лимиты.** Rate limits ниже, чем на платном тарифе. Числа не опубликованы: «Limits can change, so this page describes behavior rather than fixed numbers»; превышение даёт HTTP 429.
+- **BYOK** (свои ключи провайдеров) на free tier недоступен: нужен платный тариф и купленные кредиты.
+- **Начало отсчёта.** Кредиты начинают действовать с первого запроса.
+- **Переход на платный.** При покупке кредитов аккаунт переходит на paid tier, ежемесячный бесплатный кредит больше не начисляется.
+- **Карта: требование не подтверждено однозначно.** В тексте страницы цен для free tier карта не требуется, но на странице Getting started сказано: «To use free AI Gateway Credits, add a valid payment method to your team».
+- **Нерешённый вопрос.** В сообществе Vercel есть сообщения, что бесплатный кредит перестал обновляться, а Vercel Agent назвал его одноразовым грантом. Официального ответа я не нашёл; это противоречит странице цен, поэтому проверяйте баланс в дашборде.
 
 ### Google AI Studio (Gemini API)
 
@@ -52,10 +56,23 @@
 
 ### Groq
 
-- **Планы.** На странице лимитов названы «Free Plan Limits» и «Developer Plan Limits». Для апгрейда с Free на Developer нужен способ оплаты (карта, банковский счёт США или SEPA).
-- **Что не удалось получить.** Единственная таблица на странице подписана в тексте как лимиты Developer, отдельные числа для Free в загруженном тексте отсутствуют (вкладка Free, вероятно, грузится скриптом). Поэтому **цифры Free я не привожу**. Какие модели доступны на Free, тоже не указано. Проверьте вкладку Free на странице в браузере.
-- **Противоречие.** Страница моделей даёт для Developer другие значения (например, для `openai/gpt-oss-120b` «250K TPM, 1K RPM»), чем страница лимитов (8K TPM, 30 RPM, 1K RPD, 200K TPD). Какие относятся к какому плану, по прочитанному не определить.
-- **Карта для Free:** не указано на странице. Формулировка про апгрейд лишь косвенно намекает, что для Free карта не нужна.
+Источник: страница Organization Limits [console.groq.com/settings/limits](https://console.groq.com/settings/limits) (нужен вход в аккаунт), проверено вручную 12 ноября 2026.
+
+**Цифры ниже — базовые лимиты плана Free. На плане Developer лимиты выше.**
+
+| Модель | RPM | RPD | TPM | TPD |
+|---|---|---|---|---|
+| `openai/gpt-oss-120b` | 30 | 1000 | 8000 | 200000 |
+| `openai/gpt-oss-20b` | 30 | 1000 | 8000 | 200000 |
+| `qwen/qwen3.8-27b` | 30 | 1000 | 8000 | 200000 |
+| `allam-2-7b` | 30 | 7000 | 6000 | 500000 |
+| `whisper-large-v3` (речь в текст) | 20 | 2000 | — | 28800 аудио-секунд в день |
+| `canopylabs/orpheus-v1-english` (текст в речь) | 10 | 100 | 1200 | 3600 |
+
+Расшифровка: RPM — запросов в минуту, RPD — в день, TPM — токенов в минуту, TPD — токенов в день.
+
+- **Расхождение с публичной документацией.** Публичная страница [docs/rate-limits](https://console.groq.com/docs/rate-limits) в тексте называет похожую таблицу базовыми лимитами плана Developer и не содержит `allam-2-7b`. Страница Organization Limits, которую смотрел пользователь, показывает те же числа для модели gpt-oss, qwen и whisper как лимиты Free. Какой из двух подписей верить, я проверить не могу (страница Organization Limits требует вход); в этом файле принята версия пользователя. Страница моделей даёт для Developer другие, более высокие числа (например, для `openai/gpt-oss-120b` «250K TPM, 1K RPM»).
+- **Карта.** Для Free не указано на странице. Для апгрейда с Free на Developer нужен способ оплаты (карта, банковский счёт США или SEPA).
 
 ### DeepSeek
 
@@ -71,9 +88,22 @@
 - **Лимиты.** Зависят от накопленной суммы пополнений; таблица уровней на странице пустая (загружается скриптом), поэтому RPM, TPM и параллельность по уровням не получены. Лимиты считаются на пользователя, не на ключ, общие для всех моделей; превышение даёт HTTP 429.
 - **Оплата.** Для частных пользователей названы WeChat Pay и Alipay, для бизнеса — связь с отделом продаж. Требование банковской карты не указано.
 
-## Как проверялось и чему не стоит верить
+## Источники и дата проверки
 
-- Источник — только официальные домены провайдеров, поиск использовался для уточнения противоречий и помечен отдельно.
-- Некоторые страницы (цены Anthropic, цены Gemini, каталог Vercel) читались не полностью или через пересказ. Такие места помечены «из пересказа» или «не дословно».
-- Страницы лимитов Groq и Kimi частично строятся скриптом: таблицы пришли пустыми или без вкладки Free, поэтому их цифр здесь нет.
+Дата проверки всех строк: 12 ноября 2026.
+
+| Сервис | Источник данных |
+|---|---|
+| Anthropic | [pricing](https://platform.claude.com/docs/en/about-claude/pricing), [rate-limits](https://platform.claude.com/docs/en/api/rate-limits); отсутствие стартовых кредитов проверено вручную на аккаунте пользователя |
+| Vercel AI Gateway | [pricing](https://vercel.com/docs/ai-gateway/pricing) (last updated 8 сентября 2026), проверено вручную; карта: [getting-started](https://vercel.com/docs/ai-gateway/getting-started) |
+| Google AI Studio | [pricing](https://aistudio.google.com/docs/pricing), [rate-limits](https://aistudio.google.com/docs/rate-limits) |
+| OpenRouter | [limits](https://openrouter.ai/docs/api-reference/limits), [FAQ](https://openrouter.ai/docs/faq), [pricing](https://openrouter.ai/pricing) |
+| Groq | [Organization Limits](https://console.groq.com/settings/limits) (вручную, нужен вход), [rate-limits](https://console.groq.com/docs/rate-limits), [billing-faqs](https://console.groq.com/docs/billing-faqs) |
+| DeepSeek | [pricing](https://api-docs.deepseek.com/quick_start/pricing/), [rate_limit](https://api-docs.deepseek.com/quick_start/rate_limit) |
+| Kimi | [limits](https://platform.kimi.ai/docs/pricing/limits), [pricing](https://platform.kimi.ai/docs/pricing/chat), [account-and-payments](https://platform.kimi.ai/docs/guide/account-and-payments) |
+
+## Чему не стоит верить без проверки
+
+- Страницы Google (цены), Anthropic (цены) и каталог Vercel читались не полностью или через пересказ. Такие места помечены «из пересказа» или «не дословно».
+- Таблицы лимитов Kimi пришли пустыми, поэтому их цифр здесь нет.
 - Условия быстро меняются. Перед использованием откройте ссылку из таблицы и сверьте.
